@@ -1,0 +1,26 @@
+Why & When Adapter?
+1. Legacy System Integration:
+    When you need to integrate with legacy systems that have interfaces not compatible with your current system.
+2. Third-party Libraries:
+    When you need to use third-party libraries or APIs that do not match the expected interface of your application.
+3. Multiple Interfaces:
+    When you have multiple classes with different interfaces that need to be used interchangeably by the client code.
+4. Interface Standardization:
+    When you want to standardize the interface of multiple classes to make them compatible with a specific framework or API.
+5. Simplifying Client Code:
+    When you want to simplify client code by providing a unified interface to a set of different interfaces or classes.
+
+Implementation:
+1. Define Target Interface:
+    Create an interface that defines the methods clients expect.(BankAPI)
+2. Implement Adapters:
+    Create concrete adapter classes that implement the target interface. (YesBankAdapter, ICICIBankAdapter)
+    Implement the methods of the target interface by translating calls to the methods of the adaptee.
+3. Create Adaptees:
+    Identify and create the existing classes that need to be adapted (YesBank, ICICIBank classes)
+4. Implement Factory Class:
+    Create a factory class (BankAdapterFactory) with a method to return the appropriate adapter based on some criteria
+    (e.g., an enum or a string identifier).
+5. Client Code:
+    Use the factory class to obtain an instance of the target interface.
+    Interact with the adapter through the target interface.
