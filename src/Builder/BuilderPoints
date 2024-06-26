@@ -1,0 +1,24 @@
+Why and when Builder?
+    When an object has many fields, some of which are optional, and others are mandatory
+    When designing immutable objects (objects whose state cannot be changed after construction)
+    For avoiding the "telescoping constructor" anti-pattern (where constructors have increasing numbers of parameters).
+    When validations are required for the object creation
+
+Steps to implement Builder pattern
+1. Static Nested Builder Class:
+    Define a static nested class Builder within the Student class.
+2. Private Constructor:
+    Make the constructor of the Student class private.
+    The constructor takes a Builder instance as an argument.
+3. Builder Methods:
+    Define setter methods in the Builder class for each field.
+    Each setter method should return the Builder instance to allow method chaining.
+4. Build Method:
+    Implement a build() method in the Builder class.
+    The build() method should validate the fields and return a new Student instance.
+5. Static Method to Get Builder:
+    Provide a static method in the Student class to return a new Builder instance.
+6. Field Access:
+    The Student constructor initializes its fields using the Builder.
+7. Validation (Optional):
+    Perform any necessary validation in the build() method before creating the Student instance.

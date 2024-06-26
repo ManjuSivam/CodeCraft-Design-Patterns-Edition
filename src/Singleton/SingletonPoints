@@ -1,0 +1,15 @@
+When to Use
+Use this pattern when you need to ensure that a class has only one instance and you need to handle multiple threads trying to create the instance simultaneously.
+
+Steps to implement Thread-Safe Singleton with Double-Checked Locking
+1. Private Constructor:
+    The constructor is private to prevent direct instantiation from outside the class.
+2. Private Static Instance Variable:
+    A private static variable holds the single instance of the class.
+3. Reentrant Lock for Thread Safety:
+    A ReentrantLock is used to ensure that only one thread can create the instance at a time.
+4. Public Static Method to Get the Instance:
+    The getInstance method returns the single instance of the class. It uses double-checked locking to ensure that the instance is created only once, and only when needed.
+5. Double-Checked Locking:
+    The outer if (dbc == null) check ensures that the lock is acquired only when the instance is not already created.
+    The inner if (dbc == null) check ensures that the instance is created only once, even if multiple threads reach the outer check simultaneously.
