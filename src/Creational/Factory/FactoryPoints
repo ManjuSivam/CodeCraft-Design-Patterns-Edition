@@ -1,4 +1,4 @@
-Key Points for Abstract Factory Design Pattern
+Key Points for Abstract Creational.Factory Design Pattern
 1. One interface for factory Methods
 2. concrete classes implement the factory interface
 3. One concrete class for Non-factory Methods
@@ -6,10 +6,10 @@ Key Points for Abstract Factory Design Pattern
    concrete class that implements factory methods based on user inputs.
 
 Implementation:
-1. Abstract Factory Interface:
+1. Abstract Creational.Factory Interface:
     Define an interface with methods to create abstract products.
     Here - UiFactory
-2. Concrete Factory Classes:
+2. Concrete Creational.Factory Classes:
     Implement the abstract factory interface in concrete factory classes for each platform or
     product family.
     Here - IOSFactory, AndroidFactory
@@ -20,7 +20,7 @@ Implementation:
     Here - IosBtn, AndroidBtn, IosMenu, AndroidMenu
 5. Client Code:
     Use the abstract factory to create products without specifying their concrete classes.
-6. Factory Method in Client:
+6. Creational.Factory Method in Client:
     Include a method in the client to get the appropriate factory based on some criteria
     (e.g., flutter.getFactory(SupportedPlatforms.IOS)).
 7. Interaction with Products:

@@ -1,2 +1,6 @@
-package Structural.Adapter;public enum BankEnum {
+package Structural.Adapter;
+
+public enum PartnerBanks {
+    ICICIBANK,
+    YESBANK
 }

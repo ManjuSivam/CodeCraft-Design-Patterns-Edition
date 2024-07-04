@@ -1,4 +1,4 @@
-package Singleton.MultiThreaded.EarlyInit;
+package Creational.Singleton.MultiThreaded.EarlyInit;
 
 public class DBConnection {
     String userName;

@@ -1,10 +1,12 @@
 package Structural.Decorator;
 //only addon
 
-public class MangoScoop implements Icecream{
+import Structural.Decorator.Icecream;
+
+public class ChocolateScoop implements Icecream {
     Icecream ic;
     int cost = 30;
-    String desc = "Mango scoop";
+    String desc = "Chocolate scoop ";
 
     @Override
     public int getCost() {
@@ -13,10 +15,10 @@ public class MangoScoop implements Icecream{
 
     @Override
     public String getDesc() {
-        return ic.getDesc()+this.desc; // as addon
+        return ic.getDesc()+"+"+this.desc; // as addon
     }
 
-    MangoScoop(Icecream ic){ //only copy cost; as it can be only add on
+    ChocolateScoop(Icecream ic){ //only copy cost; as it can be only add on
         this.ic=ic;
     }
 }

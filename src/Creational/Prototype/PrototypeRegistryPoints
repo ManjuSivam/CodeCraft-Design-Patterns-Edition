@@ -1,4 +1,4 @@
-Why Use the Prototype Registry Pattern
+Why Use the Creational.Prototype Registry Pattern
 1. Efficient Object Creation:
     Reduces the overhead of creating new instances by cloning existing prototypes instead of creating objects from scratch.
 2. Avoiding Complex Initialization:
@@ -10,12 +10,12 @@ Why Use the Prototype Registry Pattern
 5. Improved Performance:
     Enhances performance by reusing existing objects, especially when the cost of creating new objects is high.
 
-Steps for implementing the Prototype Registry Pattern:
-1. Define a Prototype Interface:
+Steps for implementing the Creational.Prototype Registry Pattern:
+1. Define a Creational.Prototype Interface:
     Create an interface or abstract class with a clone() method.
-2. Implement the Prototype Interface:
+2. Implement the Creational.Prototype Interface:
     Implement the prototype interface in concrete classes that need to be cloned.
-3. Create a Prototype Registry:
+3. Create a Creational.Prototype Registry:
     Design a registry class to store and manage prototypes.
 4. Add Methods to Registry:
     Implement methods in the registry to add, remove, and retrieve prototypes.

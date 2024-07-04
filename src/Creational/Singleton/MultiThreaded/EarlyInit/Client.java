@@ -1,4 +1,4 @@
-package Singleton.MultiThreaded.EarlyInit;
+package Creational.Singleton.MultiThreaded.EarlyInit;
 
 public class Client {
     public static void main(String[] args) {

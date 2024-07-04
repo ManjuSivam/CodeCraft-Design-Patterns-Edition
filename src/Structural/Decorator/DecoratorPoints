@@ -1,0 +1,19 @@
+When Decorator ?
+when extending functionality of an object dynamically and transparently from the other objects
+
+Implementation:
+1. Component:
+    Interface or abstract class defining the methods that will be implemented or
+    overridden by decorators and concrete components.
+    interface Icecream with methods getDesc() and getCost().
+
+2. ConcreteComponent:
+    Class implementing the Component interface. This is the primary object being decorated.
+    class OrangeCone implements Icecream.
+
+3. ConcreteDecorator:
+    Classes implementing the interface and adding functionalities to the component by
+    containing a reference to an interface object. Decorators extend the functionality of the
+    base component.
+    Classes like ChocolateSyrup, ChocolateCone, VanillaScoop, ChocolateScoop, and Cherry that
+    implement Icecream and add functionalities by containing a reference to an Icecream object.

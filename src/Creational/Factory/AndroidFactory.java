@@ -1,4 +1,4 @@
-package Factory;
+package Creational.Factory;
 
 public class AndroidFactory implements UiFactory{
     @Override

@@ -1,4 +1,4 @@
-package Singleton.SingleThreaded;
+package Creational.Singleton.SingleThreaded;
 
 public class Client {
     public static void main(String[] args) {

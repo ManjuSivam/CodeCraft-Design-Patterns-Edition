@@ -1,4 +1,4 @@
-package Factory;
+package Creational.Factory;
 
 public class Client {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Singleton.MultiThreaded.DoubleCheckLock;
+package Creational.Singleton.MultiThreaded.DoubleCheckLock;
 
 import java.nio.channels.AsynchronousFileChannel;
 import java.util.concurrent.locks.ReentrantLock;

@@ -1,6 +1,6 @@
-package Factory;
+package Creational.Factory;
 
-//Factory method that produces Factory based on the User input
+//Creational.Factory method that produces Creational.Factory based on the User input
 public class UIFactoryFactory {
     static UiFactory getFactory(SupportedPlatforms platform){
         if(platform.equals(SupportedPlatforms.IOS)){

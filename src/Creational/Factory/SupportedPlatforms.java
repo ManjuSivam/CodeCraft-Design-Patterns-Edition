@@ -1,4 +1,4 @@
-package Factory;
+package Creational.Factory;
 
 public enum SupportedPlatforms {
     ANDROID,

@@ -1,4 +1,4 @@
-package Singleton.MultiThreaded.DoubleCheckLock;
+package Creational.Singleton.MultiThreaded.DoubleCheckLock;
 
 public class Client {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Factory;
+package Creational.Factory;
 
 public class IOSFactory implements UiFactory{
     @Override

@@ -1,4 +1,4 @@
-package Singleton.SingleThreaded;
+package Creational.Singleton.SingleThreaded;
 
 public class DBConnection {
     String userName;

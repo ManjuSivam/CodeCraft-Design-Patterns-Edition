@@ -1,7 +1,7 @@
 When to Use
 Use this pattern when you need to ensure that a class has only one instance and you need to handle multiple threads trying to create the instance simultaneously.
 
-Steps to implement Thread-Safe Singleton with Double-Checked Locking
+Steps to implement Thread-Safe Creational.Singleton with Double-Checked Locking
 1. Private Constructor:
     The constructor is private to prevent direct instantiation from outside the class.
 2. Private Static Instance Variable:
